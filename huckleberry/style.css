@@ -1,3 +1,15 @@
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-lighter: hsl(45deg, 100%, 50%);
+  --secondary-darker: hsl(45deg, 100%, 40%);
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -10,3 +22,43 @@ body {
 }
 
 /* Add styles here! */
+p {
+  line-height: 1.5;
+}
+
+header {
+  border-bottom: 8px solid var(--gray-light);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  padding: 48px 0;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 50%;
+  padding: 24px;
+}
+
+.intro-chunk strong {
+  color: var(--primary);
+}
+
+main {
+  background-color: var(--gray-medium);
+}
+
+.card {
+  padding: 24px;
+  background-color: var(--gray-white);
+  border-bottom: 8px solid var(--gray-light);
+}
+
+.indented-heading {
+  padding: 16px 32px;
+  background-color: var(--secondary-lighter);
+  border-bottom: 8px solid var(--secondary-darker);
+  margin-top: -16px;
+  margin-left: -32px;
+}
