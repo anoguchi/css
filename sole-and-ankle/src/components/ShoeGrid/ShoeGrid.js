@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   gap: 32px;
 `;
 const ShoeWrapper = styled.div`
-  min-width: 32%;
+  min-width: 25%;
   flex: 1;
 `;
 
