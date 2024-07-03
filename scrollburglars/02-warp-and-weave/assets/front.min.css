@@ -375,3 +375,7 @@
 		padding: 15px 25px;
 	}
 }
+
+#tve_editor {
+	overflow: hidden;
+}
