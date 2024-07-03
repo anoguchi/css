@@ -16,3 +16,4 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
