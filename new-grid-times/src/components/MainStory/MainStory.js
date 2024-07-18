@@ -1,20 +1,15 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import { QUERIES } from '../../constants';
+import React from "react";
+import styled from "styled-components/macro";
+import { QUERIES } from "../../constants";
 
-const MainStory = ({
-  id,
-  title,
-  image,
-  location,
-  abstract,
-  ...delegated
-}) => {
+const MainStory = ({ id, title, image, location, abstract, ...delegated }) => {
   return (
     <Wrapper {...delegated}>
       <a href={`/story/${id}`}>
-        <Image alt={image.alt} src={image.src} />
-        <Heading>{title}</Heading>
+        <FullBleed>
+          <Image alt={image.alt} src={image.src} />
+        </FullBleed>
+          <Heading>{title}</Heading>
       </a>
       <Abstract>
         <Location>{location}</Location> — {abstract}
@@ -58,7 +53,6 @@ const Abstract = styled.p`
   @media ${QUERIES.laptopAndUp} {
     -webkit-line-clamp: 10;
   }
-
 `;
 
 const Location = styled.span`
@@ -72,6 +66,16 @@ const ReadMore = styled.a`
   &:hover {
     text-decoration: underline;
     text-underline-offset: 1px;
+  }
+`;
+
+const FullBleed = styled.div`
+  margin-left: -18px;
+  margin-right: -18px;
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-left: revert;
+    margin-right: revert;
   }
 `;
 

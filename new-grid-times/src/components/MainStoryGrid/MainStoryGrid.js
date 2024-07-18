@@ -99,9 +99,12 @@ const StoryList = styled.div`
 `;
 
 const OpinionStoryList = styled(StoryList)`
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndUp} {
     flex-direction: row;
     gap: 16px;
+  }
+  @media ${QUERIES.desktopAndUp} {
+    flex-direction: column;
   }
 `;
 
@@ -114,12 +117,21 @@ const VerticalStoryWrapper = styled.div`
 `;
 
 const OpinionStoryWrapper = styled(VerticalStoryWrapper)`
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndUp} {
     flex: 1;
     &:not(:last-of-type) {
       border-bottom: revert;
       padding-bottom: revert;
       margin-bottom: revert;
+    }
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    flex: 1;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--color-gray-300);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
   }
 `;

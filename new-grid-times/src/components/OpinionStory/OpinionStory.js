@@ -21,17 +21,24 @@ const Wrapper = styled.article`
 `;
 
 const Avatar = styled.img`
+  --float-right: right;
+  --margin-left: 16px;
   display: block;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  float: right;
-  margin-left: 16px;
+  float: var(--float-right);
+  margin-left: var(--margin-left);
 
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndUp} {
     float: revert;
     margin-left: revert;
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    float: var(--float-right);
+    margin-left: var(--margin-left);
   }
 `;
 

@@ -76,10 +76,7 @@ const ActionGroup = styled.div`
 `;
 
 const MainHeader = styled(MaxWidthWrapper)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
+
   margin-bottom: 48px;
 
   @media ${QUERIES.tabletAndUp} {
