@@ -21,7 +21,7 @@ const SIZES = {
   },
 };
 
-const Button = ({ variant, size, children }) => {
+const Button = ({ variant, size, data, children }) => {
   const styles = SIZES[size];
   let Component;
   if (variant === "fill") {
@@ -30,6 +30,8 @@ const Button = ({ variant, size, children }) => {
     Component = OutlineButton;
   } else if (variant === "ghost") {
     Component = GhostButton;
+  } else if (variant === "danger"){
+    Component = DangerButton;
   } else {
     throw new Error(`Unrecognized Button variant: ${variant}`);
   }
@@ -77,5 +79,17 @@ const GhostButton = styled(ButtonBase)`
     color: ${COLORS.black};
   }
 `;
+
+const DangerButton = styled(ButtonBase)`
+  color: ${COLORS.white};
+  background-color: ${COLORS.danger};
+
+  &:focus {
+    outline-color: ${COLORS.danger};
+  }
+  &:hover {
+    opacity: 90%;
+  }
+`
 
 export default Button;

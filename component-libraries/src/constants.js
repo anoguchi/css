@@ -6,5 +6,9 @@ export const COLORS = {
   gray: "hsl(240deg 10% 50%)",
   transparentGray15: "hsl(240deg 10% 50% / 0.15)",
   transparentGray75: "hsl(240deg 10% 50% / 0.75)",
-  black: "hsl(0deg 0% 0%)"
+  black: "hsl(0deg 0% 0%)",
+  info: "hsl(240, 100%, 50%)",
+  success: "hsl(130, 100%, 50%)",
+  alert: "hsl(29, 100%, 50%)",
+  danger: "hsl(0, 100%, 50%)"
 };
