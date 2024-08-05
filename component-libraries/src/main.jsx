@@ -5,10 +5,11 @@ import App from './App.jsx'
 import './index.css'
 import MyBreadcrumbs from './Breadcrumbs.jsx'
 import ButtonTable from './ButtonTable.jsx'
+import Quote from './Quote.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ButtonTable />
+    <Quote by="Beto" source="https://github.com/anoguchi">Testando</Quote>
   </React.StrictMode>,
 )

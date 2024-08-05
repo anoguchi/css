@@ -44,6 +44,7 @@ const ButtonBase = styled.button`
   padding: var(--padding);
   border: 2px solid transparent;
   border-radius: var(--borderRadius);
+  cursor: pointer;
 
   &:focus {
     outline-color: ${COLORS.primary};
