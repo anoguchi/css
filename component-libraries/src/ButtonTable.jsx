@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Button from "./Button";
+import SpookyButton from "./SpookyButton";
 
 const ButtonTable = () => {
   return (
@@ -12,6 +13,7 @@ const ButtonTable = () => {
         <th>Outline</th>
         <th>Ghost</th>
         <th>Mood</th>
+        <th>Halloween</th>
       </tr>
       <tr>
         <td>Small</td>
@@ -34,6 +36,11 @@ const ButtonTable = () => {
           <Button size="small" variant="fill">
             BUTTON
           </Button>
+        </td>
+        <td>
+          <SpookyButton size="small" variant="fill">
+            BUTTON
+          </SpookyButton>
         </td>
       </tr>
       <tr>
@@ -58,6 +65,11 @@ const ButtonTable = () => {
             BUTTON
           </Button>
         </td>
+        <td>
+          <SpookyButton size="medium" variant="fill">
+            BUTTON
+          </SpookyButton>
+        </td>
       </tr>
       <tr>
         <td>Large</td>
@@ -77,12 +89,16 @@ const ButtonTable = () => {
           </Button>
         </td>
         <td>
-          <Button  size="large" variant="danger">
+          <Button size="large" variant="danger">
             BUTTON
           </Button>
         </td>
+        <td>
+          <SpookyButton size="large" variant="fill">
+            BUTTON
+          </SpookyButton>
+        </td>
       </tr>
-      
     </Table>
   );
 };

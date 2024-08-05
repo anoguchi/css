@@ -10,5 +10,6 @@ export const COLORS = {
   info: "hsl(240, 100%, 50%)",
   success: "hsl(130, 100%, 50%)",
   alert: "hsl(29, 100%, 50%)",
-  danger: "hsl(0, 100%, 50%)"
+  danger: "hsl(0, 100%, 50%)",
+  halloween: "hsl(40, 100%, 50%)",
 };
